@@ -1,0 +1,80 @@
+@custom-variant dark (&:is(.dark *));
+
+/*
+  AquaFlow design tokens.
+  Display: Space Grotesk — used only for numerals, balances and headings.
+  Body/UI: Inter.
+  Data/mono: IBM Plex Mono — used for card numbers, IDs, timestamps.
+*/
+:root {
+  --font-display: 'Space Grotesk', 'Inter', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* Brand */
+  --navy: #08192F;
+  --navy-2: #0E2743;
+  --aqua: #17B4E6;
+  --aqua-2: #3FE0D0;
+  --ink: #0A1220;
+  --mist: #F4F8FB;
+  --mist-2: #E7EFF5;
+  --line: #DEE7EE;
+  --success: #17B482;
+  --warning: #E8A23D;
+  --danger: #E5484D;
+
+  --background: var(--mist);
+  --foreground: var(--ink);
+  --card: #FFFFFF;
+  --card-foreground: var(--ink);
+  --popover: #FFFFFF;
+  --popover-foreground: var(--ink);
+  --primary: var(--navy);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--mist-2);
+  --secondary-foreground: var(--navy);
+  --muted: var(--mist-2);
+  --muted-foreground: #6B7C8C;
+  --accent: var(--aqua);
+  --accent-foreground: #FFFFFF;
+  --destructive: var(--danger);
+  --destructive-foreground: #FFFFFF;
+  --border: var(--line);
+  --input: #FFFFFF;
+  --input-background: #FFFFFF;
+  --switch-background: #C7D4DE;
+  --ring: var(--aqua);
+  --radius: 1.1rem;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+
+  --shadow-soft: 0 1px 2px rgba(8, 25, 47, 0.04), 0 8px 24px -8px rgba(8, 25, 47, 0.10);
+  --shadow-lift: 0 4px 8px rgba(8, 25, 47, 0.05), 0 16px 40px -12px rgba(8, 25, 47, 0.18);
+}
+
+.dark {
+  --background: #061523;
+  --foreground: #EAF2F8;
+  --card: #0C2138;
+  --card-foreground: #EAF2F8;
+  --popover: #0C2138;
+  --popover-foreground: #EAF2F8;
+  --primary: #EAF2F8;
+  --primary-foreground: var(--navy);
+  --secondary: #12304C;
+  --secondary-foreground: #EAF2F8;
+  --muted: #12304C;
+  --muted-foreground: #8FA6B8;
+  --accent: var(--aqua);
+  --accent-foreground: #06131F;
+  --destructive: #F2696D;
+  --destructive-foreground: #FFFFFF;
+  --border: #163A57;
+  --input: #0C2138;
+  --input-background: #0C2138;
+  --switch-background: #23496A;
+  --ring: var(--aqua);
+  --shadow-soft: 0 1px 2px rgba(0,0,0,0.2), 0 8px 24px -8px rgba(0,0,0,0.4);
+  --shadow-lift: 0 4px 8px rgba(0,0,0,0.25), 0 16px 40px -12px rgba(0,0,0,0.55);
+}
