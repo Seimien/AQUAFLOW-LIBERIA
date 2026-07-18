@@ -15,7 +15,7 @@ export function Splash() {
   return (
     <div
       className="min-h-dvh flex flex-col items-center justify-center px-8 relative"
-      style={{ background: 'var(--navy)' }}
+      style={{ background: 'var(--white)' }}
     >
       <img
         src={logoFull}
